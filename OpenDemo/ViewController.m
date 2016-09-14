@@ -6,7 +6,7 @@
 //  Copyright © 2016年 QMTV. All rights reserved.
 //
 
-#define kPerSecondDetectCount 5 //每秒钟人脸监测的次数
+#define kPerSecondDetectCount 2 //每秒钟人脸监测的次数
 
 #import "ViewController.h"
 #import "CVVideoCapture.h"
@@ -76,18 +76,17 @@
     if (![[NSValue valueWithCGRect:faceBounds] isEqualToValue:[NSValue valueWithCGRect:CGRectZero]]) {
         self.faceFrameView.frame = faceBounds;
     }
-    
-    if (![[NSValue valueWithCGPoint:leftEyePosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
-        self.leftEyeView.center = leftEyePosition;
-    }
-
-    if (![[NSValue valueWithCGPoint:rightEyePosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
-        self.rightEyeView.center = rightEyePosition;
-    }
-    
-    if (![[NSValue valueWithCGPoint:mouthPosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
-        self.mouthView.center = mouthPosition;
-    }
+//    if (![[NSValue valueWithCGPoint:leftEyePosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
+//        self.leftEyeView.center = leftEyePosition;
+//    }
+//
+//    if (![[NSValue valueWithCGPoint:rightEyePosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
+//        self.rightEyeView.center = rightEyePosition;
+//    }
+//    
+//    if (![[NSValue valueWithCGPoint:mouthPosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
+//        self.mouthView.center = mouthPosition;
+//    }
 }
 
 - (void)detectorFaceByCVDetectorFromPicture:(UIImage *)picture {
@@ -103,14 +102,15 @@
 #pragma mark ---- CVVideoCaptureDelegate
 - (void)cvVideoCaptureDidCaptureImage:(UIImage *)image {
     self.counter++;
-    if (15/self.counter == kPerSecondDetectCount) {
-        
+    if (15/kPerSecondDetectCount == self.counter) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self detectorFaceByCIDetectorFromPicture:image];
         });
         
         self.counter = 0;
     }
+    
+    
 }
 
 #pragma mark ----getter
