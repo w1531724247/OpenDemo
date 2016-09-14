@@ -48,6 +48,7 @@
 
 #pragma mark ---- CvVideoCameraDelegate
 - (void)processImage:(cv::Mat&)image {
+    
     UIImage *captureImage = [UIImage imageFromCVMat:image];
     if ([self.delegate respondsToSelector:@selector(cvVideoCaptureDidCaptureImage:)]) {
         [self.delegate cvVideoCaptureDidCaptureImage:captureImage];

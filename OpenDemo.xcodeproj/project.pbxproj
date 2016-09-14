@@ -15,7 +15,7 @@
 		5721AC861D7E655100492A72 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5721AC851D7E655100492A72 /* CoreVideo.framework */; };
 		5721AC881D7E655800492A72 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5721AC871D7E655800492A72 /* GLKit.framework */; };
 		5721AC8A1D7E656200492A72 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5721AC891D7E656200492A72 /* QuartzCore.framework */; };
-		57609AC01D879E69000F16FA /* FaceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 57609ABF1D879E69000F16FA /* FaceDetector.m */; };
+		57609AC01D879E69000F16FA /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57609ABF1D879E69000F16FA /* FaceDetector.mm */; };
 		57609AC31D87CCC4000F16FA /* meinv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57609AC21D87CCC4000F16FA /* meinv.jpg */; };
 		57A269BC1D7C016200547786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A269BB1D7C016200547786 /* main.m */; };
 		57A269BF1D7C016200547786 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A269BE1D7C016200547786 /* AppDelegate.m */; };
@@ -31,6 +31,25 @@
 		57DE5DEF1D88F6280075C839 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE5DEE1D88F6280075C839 /* GPUImage.framework */; };
 		57DE5DF51D88F6B70075C839 /* CVVideoCapture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5DF41D88F6B70075C839 /* CVVideoCapture.mm */; };
 		57DE5DF81D88F6F90075C839 /* GPUVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5DF71D88F6F90075C839 /* GPUVideoCapture.m */; };
+		57DE5DFE1D8909370075C839 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE5DFD1D8909370075C839 /* opencv2.framework */; };
+		57DE5E021D890C210075C839 /* GPUVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5E011D890C210075C839 /* GPUVideoConfiguration.m */; };
+		57DE5E191D891F6D0075C839 /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E081D891F6D0075C839 /* haarcascade_eye.xml */; };
+		57DE5E1A1D891F6D0075C839 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E091D891F6D0075C839 /* haarcascade_eye_tree_eyeglasses.xml */; };
+		57DE5E1B1D891F6D0075C839 /* haarcascade_frontalcatface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E0A1D891F6D0075C839 /* haarcascade_frontalcatface.xml */; };
+		57DE5E1C1D891F6D0075C839 /* haarcascade_frontalcatface_extended.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E0B1D891F6D0075C839 /* haarcascade_frontalcatface_extended.xml */; };
+		57DE5E1D1D891F6D0075C839 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E0C1D891F6D0075C839 /* haarcascade_frontalface_alt.xml */; };
+		57DE5E1E1D891F6D0075C839 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E0D1D891F6D0075C839 /* haarcascade_frontalface_alt2.xml */; };
+		57DE5E1F1D891F6D0075C839 /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E0E1D891F6D0075C839 /* haarcascade_frontalface_alt_tree.xml */; };
+		57DE5E201D891F6D0075C839 /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E0F1D891F6D0075C839 /* haarcascade_frontalface_default.xml */; };
+		57DE5E211D891F6D0075C839 /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E101D891F6D0075C839 /* haarcascade_fullbody.xml */; };
+		57DE5E221D891F6D0075C839 /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E111D891F6D0075C839 /* haarcascade_lefteye_2splits.xml */; };
+		57DE5E231D891F6D0075C839 /* haarcascade_licence_plate_rus_16stages.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E121D891F6D0075C839 /* haarcascade_licence_plate_rus_16stages.xml */; };
+		57DE5E241D891F6D0075C839 /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E131D891F6D0075C839 /* haarcascade_lowerbody.xml */; };
+		57DE5E251D891F6D0075C839 /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E141D891F6D0075C839 /* haarcascade_profileface.xml */; };
+		57DE5E261D891F6D0075C839 /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E151D891F6D0075C839 /* haarcascade_righteye_2splits.xml */; };
+		57DE5E271D891F6D0075C839 /* haarcascade_russian_plate_number.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E161D891F6D0075C839 /* haarcascade_russian_plate_number.xml */; };
+		57DE5E281D891F6D0075C839 /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E171D891F6D0075C839 /* haarcascade_smile.xml */; };
+		57DE5E291D891F6D0075C839 /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E181D891F6D0075C839 /* haarcascade_upperbody.xml */; };
 		57F9F4211D86AAB400CF6E24 /* UIImage+FaceDetect.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F9F4201D86AAB400CF6E24 /* UIImage+FaceDetect.m */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +81,7 @@
 		5721AC871D7E655800492A72 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		5721AC891D7E656200492A72 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		57609ABE1D879E69000F16FA /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
-		57609ABF1D879E69000F16FA /* FaceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetector.m; sourceTree = "<group>"; };
+		57609ABF1D879E69000F16FA /* FaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetector.mm; sourceTree = "<group>"; };
 		57609AC21D87CCC4000F16FA /* meinv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meinv.jpg; sourceTree = "<group>"; };
 		57A269B71D7C016200547786 /* OpenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A269BB1D7C016200547786 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +108,26 @@
 		57DE5DF41D88F6B70075C839 /* CVVideoCapture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVVideoCapture.mm; sourceTree = "<group>"; };
 		57DE5DF61D88F6F90075C839 /* GPUVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUVideoCapture.h; sourceTree = "<group>"; };
 		57DE5DF71D88F6F90075C839 /* GPUVideoCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUVideoCapture.m; sourceTree = "<group>"; };
+		57DE5DFD1D8909370075C839 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		57DE5E001D890C210075C839 /* GPUVideoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUVideoConfiguration.h; sourceTree = "<group>"; };
+		57DE5E011D890C210075C839 /* GPUVideoConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUVideoConfiguration.m; sourceTree = "<group>"; };
+		57DE5E081D891F6D0075C839 /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
+		57DE5E091D891F6D0075C839 /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		57DE5E0A1D891F6D0075C839 /* haarcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface.xml; sourceTree = "<group>"; };
+		57DE5E0B1D891F6D0075C839 /* haarcascade_frontalcatface_extended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface_extended.xml; sourceTree = "<group>"; };
+		57DE5E0C1D891F6D0075C839 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		57DE5E0D1D891F6D0075C839 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		57DE5E0E1D891F6D0075C839 /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		57DE5E0F1D891F6D0075C839 /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		57DE5E101D891F6D0075C839 /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
+		57DE5E111D891F6D0075C839 /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
+		57DE5E121D891F6D0075C839 /* haarcascade_licence_plate_rus_16stages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_licence_plate_rus_16stages.xml; sourceTree = "<group>"; };
+		57DE5E131D891F6D0075C839 /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
+		57DE5E141D891F6D0075C839 /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
+		57DE5E151D891F6D0075C839 /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
+		57DE5E161D891F6D0075C839 /* haarcascade_russian_plate_number.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_russian_plate_number.xml; sourceTree = "<group>"; };
+		57DE5E171D891F6D0075C839 /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
+		57DE5E181D891F6D0075C839 /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
 		57F9F41F1D86AAB400CF6E24 /* UIImage+FaceDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FaceDetect.h"; sourceTree = "<group>"; };
 		57F9F4201D86AAB400CF6E24 /* UIImage+FaceDetect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FaceDetect.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +143,7 @@
 				5721AC841D7E654800492A72 /* CoreMedia.framework in Frameworks */,
 				5721AC821D7E653C00492A72 /* AVFoundation.framework in Frameworks */,
 				57DE5DEF1D88F6280075C839 /* GPUImage.framework in Frameworks */,
+				57DE5DFE1D8909370075C839 /* opencv2.framework in Frameworks */,
 				5721AC801D7E62EC00492A72 /* CoreImage.framework in Frameworks */,
 				570C5AEC1D7DBE2F009B74C5 /* AssetsLibrary.framework in Frameworks */,
 				57A269F61D7C069F00547786 /* CoreGraphics.framework in Frameworks */,
@@ -152,7 +192,7 @@
 			children = (
 				57DE5DF21D88F6B70075C839 /* Cameras */,
 				57609ABE1D879E69000F16FA /* FaceDetector.h */,
-				57609ABF1D879E69000F16FA /* FaceDetector.m */,
+				57609ABF1D879E69000F16FA /* FaceDetector.mm */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -160,6 +200,7 @@
 		57609AC11D87CCC4000F16FA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				57DE5E071D891F6D0075C839 /* haarcascades */,
 				57609AC21D87CCC4000F16FA /* meinv.jpg */,
 			);
 			path = Resource;
@@ -236,6 +277,7 @@
 		57A269ED1D7C017900547786 /* Frames */ = {
 			isa = PBXGroup;
 			children = (
+				57DE5DFD1D8909370075C839 /* opencv2.framework */,
 				57DE5DEE1D88F6280075C839 /* GPUImage.framework */,
 				5721AC891D7E656200492A72 /* QuartzCore.framework */,
 				5721AC871D7E655800492A72 /* GLKit.framework */,
@@ -255,12 +297,46 @@
 		57DE5DF21D88F6B70075C839 /* Cameras */ = {
 			isa = PBXGroup;
 			children = (
+				57DE5DFF1D890C0A0075C839 /* Configuration */,
 				57DE5DF31D88F6B70075C839 /* CVVideoCapture.h */,
 				57DE5DF41D88F6B70075C839 /* CVVideoCapture.mm */,
 				57DE5DF61D88F6F90075C839 /* GPUVideoCapture.h */,
 				57DE5DF71D88F6F90075C839 /* GPUVideoCapture.m */,
 			);
 			path = Cameras;
+			sourceTree = "<group>";
+		};
+		57DE5DFF1D890C0A0075C839 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				57DE5E001D890C210075C839 /* GPUVideoConfiguration.h */,
+				57DE5E011D890C210075C839 /* GPUVideoConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		57DE5E071D891F6D0075C839 /* haarcascades */ = {
+			isa = PBXGroup;
+			children = (
+				57DE5E081D891F6D0075C839 /* haarcascade_eye.xml */,
+				57DE5E091D891F6D0075C839 /* haarcascade_eye_tree_eyeglasses.xml */,
+				57DE5E0A1D891F6D0075C839 /* haarcascade_frontalcatface.xml */,
+				57DE5E0B1D891F6D0075C839 /* haarcascade_frontalcatface_extended.xml */,
+				57DE5E0C1D891F6D0075C839 /* haarcascade_frontalface_alt.xml */,
+				57DE5E0D1D891F6D0075C839 /* haarcascade_frontalface_alt2.xml */,
+				57DE5E0E1D891F6D0075C839 /* haarcascade_frontalface_alt_tree.xml */,
+				57DE5E0F1D891F6D0075C839 /* haarcascade_frontalface_default.xml */,
+				57DE5E101D891F6D0075C839 /* haarcascade_fullbody.xml */,
+				57DE5E111D891F6D0075C839 /* haarcascade_lefteye_2splits.xml */,
+				57DE5E121D891F6D0075C839 /* haarcascade_licence_plate_rus_16stages.xml */,
+				57DE5E131D891F6D0075C839 /* haarcascade_lowerbody.xml */,
+				57DE5E141D891F6D0075C839 /* haarcascade_profileface.xml */,
+				57DE5E151D891F6D0075C839 /* haarcascade_righteye_2splits.xml */,
+				57DE5E161D891F6D0075C839 /* haarcascade_russian_plate_number.xml */,
+				57DE5E171D891F6D0075C839 /* haarcascade_smile.xml */,
+				57DE5E181D891F6D0075C839 /* haarcascade_upperbody.xml */,
+			);
+			path = haarcascades;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,10 +443,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DE5E1F1D891F6D0075C839 /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				57A269CA1D7C016200547786 /* LaunchScreen.storyboard in Resources */,
 				57A269C71D7C016200547786 /* Assets.xcassets in Resources */,
+				57DE5E1E1D891F6D0075C839 /* haarcascade_frontalface_alt2.xml in Resources */,
+				57DE5E291D891F6D0075C839 /* haarcascade_upperbody.xml in Resources */,
+				57DE5E251D891F6D0075C839 /* haarcascade_profileface.xml in Resources */,
+				57DE5E1C1D891F6D0075C839 /* haarcascade_frontalcatface_extended.xml in Resources */,
+				57DE5E221D891F6D0075C839 /* haarcascade_lefteye_2splits.xml in Resources */,
+				57DE5E1B1D891F6D0075C839 /* haarcascade_frontalcatface.xml in Resources */,
+				57DE5E261D891F6D0075C839 /* haarcascade_righteye_2splits.xml in Resources */,
 				57A269C51D7C016200547786 /* Main.storyboard in Resources */,
+				57DE5E191D891F6D0075C839 /* haarcascade_eye.xml in Resources */,
 				57609AC31D87CCC4000F16FA /* meinv.jpg in Resources */,
+				57DE5E211D891F6D0075C839 /* haarcascade_fullbody.xml in Resources */,
+				57DE5E231D891F6D0075C839 /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
+				57DE5E1D1D891F6D0075C839 /* haarcascade_frontalface_alt.xml in Resources */,
+				57DE5E201D891F6D0075C839 /* haarcascade_frontalface_default.xml in Resources */,
+				57DE5E241D891F6D0075C839 /* haarcascade_lowerbody.xml in Resources */,
+				57DE5E281D891F6D0075C839 /* haarcascade_smile.xml in Resources */,
+				57DE5E1A1D891F6D0075C839 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				57DE5E271D891F6D0075C839 /* haarcascade_russian_plate_number.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57609AC01D879E69000F16FA /* FaceDetector.m in Sources */,
+				57609AC01D879E69000F16FA /* FaceDetector.mm in Sources */,
 				57A269C21D7C016200547786 /* ViewController.m in Sources */,
 				57DE5DF51D88F6B70075C839 /* CVVideoCapture.mm in Sources */,
 				57DE5DF81D88F6F90075C839 /* GPUVideoCapture.m in Sources */,
@@ -403,6 +496,7 @@
 				57A269BC1D7C016200547786 /* main.m in Sources */,
 				570C5AF31D7DBF15009B74C5 /* UIImage+OpenCV.mm in Sources */,
 				57F9F4211D86AAB400CF6E24 /* UIImage+FaceDetect.m in Sources */,
+				57DE5E021D890C210075C839 /* GPUVideoConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

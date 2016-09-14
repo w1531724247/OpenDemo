@@ -6,7 +6,7 @@
 //  Copyright © 2016年 QMTV. All rights reserved.
 //
 
-#define kPerSecondDetectCount 2 //每秒钟人脸监测的次数
+#define kPerSecondDetectCount 5 //每秒钟人脸监测的次数
 
 #import "ViewController.h"
 #import "CVVideoCapture.h"
@@ -34,6 +34,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [self setup];
+
+    //使用CIDetector检测需要转换坐标系, 使用CVDectector则不需要转换坐标系
     // flip image on y-axis to match coordinate system used by core image
     [self.imageView setTransform:CGAffineTransformMakeScale(1.0, -1.0)];
     // flip the entire window to make everything right side up
@@ -63,14 +65,13 @@
 
 #pragma mark ----private
 
-- (void)detectorFaceFromPicture:(UIImage *)picture {
-    
+- (void)detectorFaceByCIDetectorFromPicture:(UIImage *)picture {
     CGRect faceBounds;
     CGPoint leftEyePosition;
     CGPoint rightEyePosition;
     CGPoint mouthPosition;
     
-    [self.detector detectorFaceWithImage:picture faceBounds:&faceBounds leftEyePosition:&leftEyePosition rightEyePoint:&rightEyePosition mouthPosition:&mouthPosition];
+    [self.detector ciDetectorFaceWithImage:picture faceBounds:&faceBounds leftEyePosition:&leftEyePosition rightEyePoint:&rightEyePosition mouthPosition:&mouthPosition];
     
     if (![[NSValue valueWithCGRect:faceBounds] isEqualToValue:[NSValue valueWithCGRect:CGRectZero]]) {
         self.faceFrameView.frame = faceBounds;
@@ -87,20 +88,29 @@
     if (![[NSValue valueWithCGPoint:mouthPosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
         self.mouthView.center = mouthPosition;
     }
+}
+
+- (void)detectorFaceByCVDetectorFromPicture:(UIImage *)picture {
+    CGRect faceBounds;
     
+    [self.detector cvDetectorWithImage:picture faceBounds:&faceBounds];
+    
+    if (![[NSValue valueWithCGRect:faceBounds] isEqualToValue:[NSValue valueWithCGRect:CGRectZero]]) {
+        self.faceFrameView.frame = faceBounds;
+    }
 }
 
 #pragma mark ---- CVVideoCaptureDelegate
 - (void)cvVideoCaptureDidCaptureImage:(UIImage *)image {
-//    self.counter++;
-//    if (15/self.counter == kPerSecondDetectCount) {
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self detectorFaceFromPicture:image];
-//        });
-//        
-//        self.counter = 0;
-//    }
+    self.counter++;
+    if (15/self.counter == kPerSecondDetectCount) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self detectorFaceByCIDetectorFromPicture:image];
+        });
+        
+        self.counter = 0;
+    }
 }
 
 #pragma mark ----getter

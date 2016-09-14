@@ -7,14 +7,26 @@
 //
 
 #import "FaceDetector.h"
+#import "opencv2/highgui/ios.h"
 
-@interface FaceDetector ()
+@interface FaceDetector (){
+    cv::CascadeClassifier faceDetector;
+}
 
 @end
 
 @implementation FaceDetector
 
-- (void)detectorFaceWithImage:(UIImage *)picture faceBounds:(CGRect *)faceBounds leftEyePosition:(CGPoint *)leftEyePoint rightEyePoint:(CGPoint *)rightEyePosition mouthPosition:(CGPoint *)mouthPosition {
+/**
+ *  用coreImage的CIDetector检测图片中的人脸
+ *
+ *  @param picture          需要检测的图片
+ *  @param faceBounds       检测到的人脸的边框
+ *  @param leftEyePoint     检测到的左眼的位置
+ *  @param rightEyePosition 检测到的右眼的位置
+ *  @param mouthPosition    检测到的嘴的位置
+ */
+- (void)ciDetectorFaceWithImage:(UIImage *)picture faceBounds:(CGRect *)faceBounds leftEyePosition:(CGPoint *)leftEyePoint rightEyePoint:(CGPoint *)rightEyePosition mouthPosition:(CGPoint *)mouthPosition {
     
     // draw a CI image with the previously loaded face detection picture
     CIImage* image = [CIImage imageWithCGImage:picture.CGImage];
@@ -54,6 +66,43 @@
             *mouthPosition = faceFeature.mouthPosition;
         }
     }
+}
+
+/**
+ *  使用Opencv的人脸监测
+ *
+ *  @param image      要检测的图片
+ *  @param faceBounds 检测到的人脸的边框
+ */
+- (void)cvDetectorWithImage:(UIImage *)image faceBounds:(CGRect *)faceBounds {
+    if (!image) {
+        return;
+    }
+    
+    // Load cascade classifier from the XML file
+    NSString* cascadePath = [[NSBundle mainBundle]
+                             pathForResource:@"haarcascade_frontalface_alt"
+                             ofType:@"xml"];
+    faceDetector.load([cascadePath UTF8String]);
+
+    //Load image with face
+    cv::Mat faceImage;
+    UIImageToMat(image, faceImage);
+    
+    
+    // Convert to grayscale
+    cv::Mat gray;
+    cvtColor(faceImage, gray, CV_BGR2GRAY);
+    
+    // Detect faces
+    std::vector<cv::Rect> faces;
+    faceDetector.detectMultiScale(gray, faces, 1.1,
+                                  2, 0|CV_HAAR_SCALE_IMAGE, cv::Size(30, 30));
+    
+    // Draw first detected faces
+    const cv::Rect& face = faces[0];
+    
+    *faceBounds = CGRectMake(face.x, face.y, face.width, face.height);
 }
 
 @end
