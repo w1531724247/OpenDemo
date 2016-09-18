@@ -28,4 +28,11 @@
  */
 - (void)cvDetectorWithImage:(UIImage *)image faceBounds:(CGRect *)faceBounds;
 
+/**
+ *  使用flandmark 检测人脸
+ *
+ *  @param image 要检测的图片
+ */
+- (void)landmarkDetectWithImage:(UIImage *)image;
+
 @end

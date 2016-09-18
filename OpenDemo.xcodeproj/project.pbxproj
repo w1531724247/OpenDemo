@@ -28,6 +28,16 @@
 		57A269F11D7C019300547786 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A269F01D7C019300547786 /* OpenGLES.framework */; };
 		57A269F31D7C019C00547786 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A269F21D7C019C00547786 /* OpenAL.framework */; };
 		57A269F61D7C069F00547786 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A269F51D7C069F00547786 /* CoreGraphics.framework */; };
+		57A5A56D1D8C32CC00EB504C /* face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57A5A56C1D8C32CC00EB504C /* face.jpg */; };
+		57A5A56F1D8C352800EB504C /* Aaron_Sorkin_0001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57A5A56E1D8C352800EB504C /* Aaron_Sorkin_0001.jpg */; };
+		57A5A5711D8C355700EB504C /* Jackie_Chan_0004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57A5A5701D8C355700EB504C /* Jackie_Chan_0004.jpg */; };
+		57B1D89C1D8E368C009B9938 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57B1D8951D8E368C009B9938 /* CMakeLists.txt */; };
+		57B1D89D1D8E368C009B9938 /* flandmark_detector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57B1D8961D8E368C009B9938 /* flandmark_detector.cpp */; };
+		57B1D89E1D8E368C009B9938 /* flandmarkConfig.cmake.in in Resources */ = {isa = PBXBuildFile; fileRef = 57B1D8981D8E368C009B9938 /* flandmarkConfig.cmake.in */; };
+		57B1D89F1D8E368C009B9938 /* liblbp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57B1D8991D8E368C009B9938 /* liblbp.cpp */; };
+		57B1D8A71D8E36E4009B9938 /* flandmark_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 57B1D8A51D8E36E4009B9938 /* flandmark_model.dat */; };
+		57B1D8A81D8E36E4009B9938 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B1D8A61D8E36E4009B9938 /* libjpeg.a */; };
+		57B1D8AA1D8E3716009B9938 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57B1D8A91D8E3716009B9938 /* haarcascade_frontalface_alt.xml */; };
 		57DE5DEF1D88F6280075C839 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE5DEE1D88F6280075C839 /* GPUImage.framework */; };
 		57DE5DF51D88F6B70075C839 /* CVVideoCapture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5DF41D88F6B70075C839 /* CVVideoCapture.mm */; };
 		57DE5DF81D88F6F90075C839 /* GPUVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5DF71D88F6F90075C839 /* GPUVideoCapture.m */; };
@@ -103,6 +113,19 @@
 		57A269F21D7C019C00547786 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		57A269F41D7C053100547786 /* OpenDemo_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenDemo_PrefixHeader.pch; sourceTree = "<group>"; };
 		57A269F51D7C069F00547786 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		57A5A56C1D8C32CC00EB504C /* face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face.jpg; sourceTree = "<group>"; };
+		57A5A56E1D8C352800EB504C /* Aaron_Sorkin_0001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Aaron_Sorkin_0001.jpg; sourceTree = "<group>"; };
+		57A5A5701D8C355700EB504C /* Jackie_Chan_0004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jackie_Chan_0004.jpg; sourceTree = "<group>"; };
+		57B1D8951D8E368C009B9938 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		57B1D8961D8E368C009B9938 /* flandmark_detector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flandmark_detector.cpp; sourceTree = "<group>"; };
+		57B1D8971D8E368C009B9938 /* flandmark_detector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flandmark_detector.h; sourceTree = "<group>"; };
+		57B1D8981D8E368C009B9938 /* flandmarkConfig.cmake.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flandmarkConfig.cmake.in; sourceTree = "<group>"; };
+		57B1D8991D8E368C009B9938 /* liblbp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = liblbp.cpp; sourceTree = "<group>"; };
+		57B1D89A1D8E368C009B9938 /* liblbp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liblbp.h; sourceTree = "<group>"; };
+		57B1D89B1D8E368C009B9938 /* msvc-compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "msvc-compat.h"; sourceTree = "<group>"; };
+		57B1D8A51D8E36E4009B9938 /* flandmark_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = flandmark_model.dat; sourceTree = "<group>"; };
+		57B1D8A61D8E36E4009B9938 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		57B1D8A91D8E3716009B9938 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		57DE5DEE1D88F6280075C839 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
 		57DE5DF31D88F6B70075C839 /* CVVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVVideoCapture.h; sourceTree = "<group>"; };
 		57DE5DF41D88F6B70075C839 /* CVVideoCapture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVVideoCapture.mm; sourceTree = "<group>"; };
@@ -139,6 +162,7 @@
 			files = (
 				5721AC8A1D7E656200492A72 /* QuartzCore.framework in Frameworks */,
 				5721AC881D7E655800492A72 /* GLKit.framework in Frameworks */,
+				57B1D8A81D8E36E4009B9938 /* libjpeg.a in Frameworks */,
 				5721AC861D7E655100492A72 /* CoreVideo.framework in Frameworks */,
 				5721AC841D7E654800492A72 /* CoreMedia.framework in Frameworks */,
 				5721AC821D7E653C00492A72 /* AVFoundation.framework in Frameworks */,
@@ -183,6 +207,8 @@
 		5721ACBA1D7EB16200492A72 /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				57B1D8A41D8E36E4009B9938 /* data */,
+				57B1D8941D8E368C009B9938 /* libflandmark */,
 			);
 			path = ThirdLibs;
 			sourceTree = "<group>";
@@ -200,8 +226,11 @@
 		57609AC11D87CCC4000F16FA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				57A5A5701D8C355700EB504C /* Jackie_Chan_0004.jpg */,
 				57DE5E071D891F6D0075C839 /* haarcascades */,
 				57609AC21D87CCC4000F16FA /* meinv.jpg */,
+				57A5A56C1D8C32CC00EB504C /* face.jpg */,
+				57A5A56E1D8C352800EB504C /* Aaron_Sorkin_0001.jpg */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -292,6 +321,30 @@
 			);
 			name = Frames;
 			path = OpenDemo/Frames;
+			sourceTree = "<group>";
+		};
+		57B1D8941D8E368C009B9938 /* libflandmark */ = {
+			isa = PBXGroup;
+			children = (
+				57B1D8951D8E368C009B9938 /* CMakeLists.txt */,
+				57B1D8961D8E368C009B9938 /* flandmark_detector.cpp */,
+				57B1D8971D8E368C009B9938 /* flandmark_detector.h */,
+				57B1D8981D8E368C009B9938 /* flandmarkConfig.cmake.in */,
+				57B1D8991D8E368C009B9938 /* liblbp.cpp */,
+				57B1D89A1D8E368C009B9938 /* liblbp.h */,
+				57B1D89B1D8E368C009B9938 /* msvc-compat.h */,
+			);
+			path = libflandmark;
+			sourceTree = "<group>";
+		};
+		57B1D8A41D8E36E4009B9938 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				57B1D8A91D8E3716009B9938 /* haarcascade_frontalface_alt.xml */,
+				57B1D8A51D8E36E4009B9938 /* flandmark_model.dat */,
+				57B1D8A61D8E36E4009B9938 /* libjpeg.a */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 		57DE5DF21D88F6B70075C839 /* Cameras */ = {
@@ -445,6 +498,7 @@
 			files = (
 				57DE5E1F1D891F6D0075C839 /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				57A269CA1D7C016200547786 /* LaunchScreen.storyboard in Resources */,
+				57A5A56D1D8C32CC00EB504C /* face.jpg in Resources */,
 				57A269C71D7C016200547786 /* Assets.xcassets in Resources */,
 				57DE5E1E1D891F6D0075C839 /* haarcascade_frontalface_alt2.xml in Resources */,
 				57DE5E291D891F6D0075C839 /* haarcascade_upperbody.xml in Resources */,
@@ -456,14 +510,20 @@
 				57A269C51D7C016200547786 /* Main.storyboard in Resources */,
 				57DE5E191D891F6D0075C839 /* haarcascade_eye.xml in Resources */,
 				57609AC31D87CCC4000F16FA /* meinv.jpg in Resources */,
+				57B1D89E1D8E368C009B9938 /* flandmarkConfig.cmake.in in Resources */,
 				57DE5E211D891F6D0075C839 /* haarcascade_fullbody.xml in Resources */,
 				57DE5E231D891F6D0075C839 /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
 				57DE5E1D1D891F6D0075C839 /* haarcascade_frontalface_alt.xml in Resources */,
+				57A5A56F1D8C352800EB504C /* Aaron_Sorkin_0001.jpg in Resources */,
 				57DE5E201D891F6D0075C839 /* haarcascade_frontalface_default.xml in Resources */,
 				57DE5E241D891F6D0075C839 /* haarcascade_lowerbody.xml in Resources */,
 				57DE5E281D891F6D0075C839 /* haarcascade_smile.xml in Resources */,
 				57DE5E1A1D891F6D0075C839 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				57A5A5711D8C355700EB504C /* Jackie_Chan_0004.jpg in Resources */,
+				57B1D8A71D8E36E4009B9938 /* flandmark_model.dat in Resources */,
 				57DE5E271D891F6D0075C839 /* haarcascade_russian_plate_number.xml in Resources */,
+				57B1D8AA1D8E3716009B9938 /* haarcascade_frontalface_alt.xml in Resources */,
+				57B1D89C1D8E368C009B9938 /* CMakeLists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,10 +548,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B1D89D1D8E368C009B9938 /* flandmark_detector.cpp in Sources */,
 				57609AC01D879E69000F16FA /* FaceDetector.mm in Sources */,
 				57A269C21D7C016200547786 /* ViewController.m in Sources */,
 				57DE5DF51D88F6B70075C839 /* CVVideoCapture.mm in Sources */,
 				57DE5DF81D88F6F90075C839 /* GPUVideoCapture.m in Sources */,
+				57B1D89F1D8E368C009B9938 /* liblbp.cpp in Sources */,
 				57A269BF1D7C016200547786 /* AppDelegate.m in Sources */,
 				57A269BC1D7C016200547786 /* main.m in Sources */,
 				570C5AF31D7DBF15009B74C5 /* UIImage+OpenCV.mm in Sources */,
@@ -648,6 +710,12 @@
 				INFOPLIST_FILE = OpenDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenDemo/ThirdLibs/libflandmark",
+					"$(PROJECT_DIR)/OpenDemo/ThirdLibs/libclandmark/data",
+					"$(PROJECT_DIR)/OpenDemo/ThirdLibs/data",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = QuanMinTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -670,6 +738,12 @@
 				INFOPLIST_FILE = OpenDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenDemo/ThirdLibs/libflandmark",
+					"$(PROJECT_DIR)/OpenDemo/ThirdLibs/libclandmark/data",
+					"$(PROJECT_DIR)/OpenDemo/ThirdLibs/data",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = QuanMinTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
