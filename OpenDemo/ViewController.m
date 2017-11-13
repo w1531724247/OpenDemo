@@ -36,26 +36,25 @@
     [self setup];
 
     //使用CIDetector检测需要转换坐标系, 使用CVDectector则不需要转换坐标系
-//    // flip image on y-axis to match coordinate system used by core image
-//    [self.imageView setTransform:CGAffineTransformMakeScale(1.0, -1.0)];
-//    // flip the entire window to make everything right side up
-//    [self.view setTransform:CGAffineTransformMakeScale(1.0, -1.0)];
+    // flip image on y-axis to match coordinate system used by core image
+    [self.imageView setTransform:CGAffineTransformMakeScale(1.0, -1.0)];
+    // flip the entire window to make everything right side up
+    [self.view setTransform:CGAffineTransformMakeScale(1.0, -1.0)];
 }
 
 - (void)setup {
-//    self.imageView.image = [UIImage imageNamed:@"meinv.jpg"];
-//    
-//    [self.view addSubview:self.imageView];
-//    [self.view addSubview:self.faceFrameView];
-//    [self.view addSubview:self.leftEyeView];
-//    [self.view addSubview:self.rightEyeView];
-//    [self.view addSubview:self.mouthView];
+    self.imageView.image = [UIImage imageNamed:@"meinv.jpg"];
+    
+    [self.view addSubview:self.imageView];
+    [self.view addSubview:self.faceFrameView];
+    [self.view addSubview:self.leftEyeView];
+    [self.view addSubview:self.rightEyeView];
+    [self.view addSubview:self.mouthView];
 }
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-//    self.imageView.frame = CGRectMake(0.0, 0.0, 480.0, 640.0);
-    self.imageView.frame = CGRectMake(0.0, 0.0, 300.0, 300.0);
+    self.imageView.frame = CGRectMake(0.0, 0.0, 480.0, 640.0);
 }
 
 
@@ -63,9 +62,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
-//    [self.cvCamera startCapture];
-    
-    [self.detector landmarkDetectWithImage:nil];
+    [self.cvCamera startCapture];
 }
 
 #pragma mark ----private
@@ -81,17 +78,17 @@
     if (![[NSValue valueWithCGRect:faceBounds] isEqualToValue:[NSValue valueWithCGRect:CGRectZero]]) {
         self.faceFrameView.frame = faceBounds;
     }
-//    if (![[NSValue valueWithCGPoint:leftEyePosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
-//        self.leftEyeView.center = leftEyePosition;
-//    }
-//
-//    if (![[NSValue valueWithCGPoint:rightEyePosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
-//        self.rightEyeView.center = rightEyePosition;
-//    }
-//    
-//    if (![[NSValue valueWithCGPoint:mouthPosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
-//        self.mouthView.center = mouthPosition;
-//    }
+    if (![[NSValue valueWithCGPoint:leftEyePosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
+        self.leftEyeView.center = leftEyePosition;
+    }
+
+    if (![[NSValue valueWithCGPoint:rightEyePosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
+        self.rightEyeView.center = rightEyePosition;
+    }
+    
+    if (![[NSValue valueWithCGPoint:mouthPosition] isEqualToValue:[NSValue valueWithCGPoint:CGPointZero]]) {
+        self.mouthView.center = mouthPosition;
+    }
 }
 
 - (void)detectorFaceByCVDetectorFromPicture:(UIImage *)picture {
@@ -114,8 +111,6 @@
         
         self.counter = 0;
     }
-    
-    
 }
 
 #pragma mark ----getter

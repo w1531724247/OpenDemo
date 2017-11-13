@@ -12,4 +12,6 @@
 
 + (UIImage *)imageFromCVMat:(cv::Mat)mat;
 
+- (cv::Mat)cvMatFromUIImage:(UIImage *)image;
+
 @end

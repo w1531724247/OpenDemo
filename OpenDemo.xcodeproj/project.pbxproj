@@ -37,7 +37,6 @@
 		57B1D89F1D8E368C009B9938 /* liblbp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57B1D8991D8E368C009B9938 /* liblbp.cpp */; };
 		57B1D8A71D8E36E4009B9938 /* flandmark_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 57B1D8A51D8E36E4009B9938 /* flandmark_model.dat */; };
 		57B1D8A81D8E36E4009B9938 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B1D8A61D8E36E4009B9938 /* libjpeg.a */; };
-		57B1D8AA1D8E3716009B9938 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57B1D8A91D8E3716009B9938 /* haarcascade_frontalface_alt.xml */; };
 		57DE5DEF1D88F6280075C839 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE5DEE1D88F6280075C839 /* GPUImage.framework */; };
 		57DE5DF51D88F6B70075C839 /* CVVideoCapture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5DF41D88F6B70075C839 /* CVVideoCapture.mm */; };
 		57DE5DF81D88F6F90075C839 /* GPUVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5DF71D88F6F90075C839 /* GPUVideoCapture.m */; };
@@ -60,6 +59,8 @@
 		57DE5E271D891F6D0075C839 /* haarcascade_russian_plate_number.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E161D891F6D0075C839 /* haarcascade_russian_plate_number.xml */; };
 		57DE5E281D891F6D0075C839 /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E171D891F6D0075C839 /* haarcascade_smile.xml */; };
 		57DE5E291D891F6D0075C839 /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57DE5E181D891F6D0075C839 /* haarcascade_upperbody.xml */; };
+		57EC70711D93D19800A3D1A9 /* OpenCVDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57EC706E1D93D19800A3D1A9 /* OpenCVDemo.mm */; };
+		57EC70721D93D19800A3D1A9 /* OpenCVDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57EC70701D93D19800A3D1A9 /* OpenCVDemoViewController.mm */; };
 		57F9F4211D86AAB400CF6E24 /* UIImage+FaceDetect.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F9F4201D86AAB400CF6E24 /* UIImage+FaceDetect.m */; };
 /* End PBXBuildFile section */
 
@@ -125,7 +126,6 @@
 		57B1D89B1D8E368C009B9938 /* msvc-compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "msvc-compat.h"; sourceTree = "<group>"; };
 		57B1D8A51D8E36E4009B9938 /* flandmark_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = flandmark_model.dat; sourceTree = "<group>"; };
 		57B1D8A61D8E36E4009B9938 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
-		57B1D8A91D8E3716009B9938 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		57DE5DEE1D88F6280075C839 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
 		57DE5DF31D88F6B70075C839 /* CVVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVVideoCapture.h; sourceTree = "<group>"; };
 		57DE5DF41D88F6B70075C839 /* CVVideoCapture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVVideoCapture.mm; sourceTree = "<group>"; };
@@ -151,6 +151,10 @@
 		57DE5E161D891F6D0075C839 /* haarcascade_russian_plate_number.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_russian_plate_number.xml; sourceTree = "<group>"; };
 		57DE5E171D891F6D0075C839 /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
 		57DE5E181D891F6D0075C839 /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
+		57EC706D1D93D19800A3D1A9 /* OpenCVDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVDemo.h; sourceTree = "<group>"; };
+		57EC706E1D93D19800A3D1A9 /* OpenCVDemo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVDemo.mm; sourceTree = "<group>"; };
+		57EC706F1D93D19800A3D1A9 /* OpenCVDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVDemoViewController.h; sourceTree = "<group>"; };
+		57EC70701D93D19800A3D1A9 /* OpenCVDemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVDemoViewController.mm; sourceTree = "<group>"; };
 		57F9F41F1D86AAB400CF6E24 /* UIImage+FaceDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FaceDetect.h"; sourceTree = "<group>"; };
 		57F9F4201D86AAB400CF6E24 /* UIImage+FaceDetect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FaceDetect.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +263,7 @@
 		57A269B91D7C016200547786 /* OpenDemo */ = {
 			isa = PBXGroup;
 			children = (
+				57EC706C1D93D19800A3D1A9 /* OpenCVDemo */,
 				57609AC11D87CCC4000F16FA /* Resource */,
 				57609ABA1D879D56000F16FA /* Class */,
 				5721ACBA1D7EB16200492A72 /* ThirdLibs */,
@@ -340,7 +345,6 @@
 		57B1D8A41D8E36E4009B9938 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				57B1D8A91D8E3716009B9938 /* haarcascade_frontalface_alt.xml */,
 				57B1D8A51D8E36E4009B9938 /* flandmark_model.dat */,
 				57B1D8A61D8E36E4009B9938 /* libjpeg.a */,
 			);
@@ -390,6 +394,17 @@
 				57DE5E181D891F6D0075C839 /* haarcascade_upperbody.xml */,
 			);
 			path = haarcascades;
+			sourceTree = "<group>";
+		};
+		57EC706C1D93D19800A3D1A9 /* OpenCVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				57EC706D1D93D19800A3D1A9 /* OpenCVDemo.h */,
+				57EC706E1D93D19800A3D1A9 /* OpenCVDemo.mm */,
+				57EC706F1D93D19800A3D1A9 /* OpenCVDemoViewController.h */,
+				57EC70701D93D19800A3D1A9 /* OpenCVDemoViewController.mm */,
+			);
+			path = OpenCVDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,7 +537,6 @@
 				57A5A5711D8C355700EB504C /* Jackie_Chan_0004.jpg in Resources */,
 				57B1D8A71D8E36E4009B9938 /* flandmark_model.dat in Resources */,
 				57DE5E271D891F6D0075C839 /* haarcascade_russian_plate_number.xml in Resources */,
-				57B1D8AA1D8E3716009B9938 /* haarcascade_frontalface_alt.xml in Resources */,
 				57B1D89C1D8E368C009B9938 /* CMakeLists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +565,7 @@
 				57B1D89D1D8E368C009B9938 /* flandmark_detector.cpp in Sources */,
 				57609AC01D879E69000F16FA /* FaceDetector.mm in Sources */,
 				57A269C21D7C016200547786 /* ViewController.m in Sources */,
+				57EC70721D93D19800A3D1A9 /* OpenCVDemoViewController.mm in Sources */,
 				57DE5DF51D88F6B70075C839 /* CVVideoCapture.mm in Sources */,
 				57DE5DF81D88F6F90075C839 /* GPUVideoCapture.m in Sources */,
 				57B1D89F1D8E368C009B9938 /* liblbp.cpp in Sources */,
@@ -558,6 +573,7 @@
 				57A269BC1D7C016200547786 /* main.m in Sources */,
 				570C5AF31D7DBF15009B74C5 /* UIImage+OpenCV.mm in Sources */,
 				57F9F4211D86AAB400CF6E24 /* UIImage+FaceDetect.m in Sources */,
+				57EC70711D93D19800A3D1A9 /* OpenCVDemo.mm in Sources */,
 				57DE5E021D890C210075C839 /* GPUVideoConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -143,7 +143,6 @@ void detectFaceInImage(IplImage *orig, IplImage* input, CvHaarClassifierCascade*
     cv::Mat faceImage;
     UIImageToMat(image, faceImage);
     
-    
     // Convert to grayscale
     cv::Mat gray;
     cvtColor(faceImage, gray, CV_BGR2GRAY);
